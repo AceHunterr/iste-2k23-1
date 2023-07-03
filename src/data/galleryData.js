@@ -45,6 +45,11 @@ import Img49 from "../static/images/Pahal_Images/Pahal_08N.jpg";
 import Img50 from "../static/images/Pahal_Images/Pahal_09N.jpg";
 import Img51 from "../static/images/Pahal_Images/Pahal_10N.jpg";
 import Img52 from "../static/images/Pahal_Images/Pahal_11N.jpg";
+import Img53 from "../static/images/Technex 01.jpg";
+import Img54 from "../static/images/Technex 02.jpg";
+import Img55 from "../static/images/Technex 03.jpg";
+import Img56 from "../static/images/Technex 04.jpg";
+import Img57 from "../static/images/Technex 05.jpg";
 let data = [
   {
     id: 1,
@@ -280,7 +285,32 @@ let data = [
     id: 52,
     imgSrc: Img52,
     author: "Pahal",
+
   },
+  {
+    id: 53,
+    imgSrc: Img53,
+    author: "Technex",
+  },
+  {
+    id: 54,
+    imgSrc: Img54,
+    author: "Technex",
+  },
+  {
+    id: 55,
+    imgSrc: Img55,
+    author: "Technex",
+  },
+  {
+    id: 56,
+    imgSrc: Img56,
+    author: "Technex",
+  },
+  {
+    id: 57,
+    imgSrc: Img57,
+    author: "Technex",
 ];
 
 export default data;
