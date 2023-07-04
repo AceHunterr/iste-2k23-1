@@ -16,9 +16,7 @@ const contactUs = () => {
       <div class="content">
         <h2>Contact Us</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam.
+        Have a question or need assistance? Our team's always ready to help. Feel free to reach out, and we'll be delighted to aid you by providing heartfelt support.
         </p>
       </div>
       <div class="contact-container">
