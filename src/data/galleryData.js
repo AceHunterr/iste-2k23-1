@@ -311,6 +311,7 @@ let data = [
     id: 57,
     imgSrc: Img57,
     author: "Technex",
+  }
 ];
 
 export default data;
