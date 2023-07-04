@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import DehazeIcon from '@mui/icons-material/Dehaze';
-import CloseIcon from '@mui/icons-material/Close';
+import DehazeIcon from "@mui/icons-material/Dehaze";
+import CloseIcon from "@mui/icons-material/Close";
 import DarkMode from "./DarkMode/DarkMode";
-
-const Logo_black= require('../static/images/iste-black.png');
+import BlueLogo from "../static/images/iste-logo-blue.png";
 
 const Navbar = () => {
   const [mobile, setMobile] = useState(false);
@@ -29,7 +28,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-      <img src={Logo_black} alt="Logo" style={{'width':'9vh','padding':'1px'}}/>
+        <img
+          src={BlueLogo}
+          alt="Logo"
+          style={{ width: "9vh", padding: "1px" }}
+        />
         <button className="mobile-menu-icon" onClick={toggleMobileMenu}>
           {mobile ? <CloseIcon /> : <DehazeIcon />}
         </button>

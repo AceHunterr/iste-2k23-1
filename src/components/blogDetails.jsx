@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
-import { useLocation } from 'react-router-dom';
-
+import React, { useState, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import { useLocation } from "react-router-dom";
 
 function BlogDetails() {
   const location = useLocation();
-  console.log(location.state)
-  const mdFile  = location.state;
-  const [markdown, setMarkdown] = useState('');
+  console.log(location.state);
+  const mdFile = location.state;
+  const [markdown, setMarkdown] = useState("");
   useEffect(() => {
     fetch(mdFile)
       .then((response) => response.text())
@@ -21,4 +20,4 @@ function BlogDetails() {
   );
 }
 
-export default BlogDetails
+export default BlogDetails;

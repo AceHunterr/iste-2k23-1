@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import profileData from '../data/memberData';
-
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import profileData from "../data/memberData";
 
 const MembersPage = () => {
-  const [selectedSection, setSelectedSection] = useState('finalYear');
+  const [selectedSection, setSelectedSection] = useState("finalYear");
 
   const handleSectionClick = (section) => {
     setSelectedSection(section);
@@ -39,9 +38,9 @@ const MembersPage = () => {
 
       <div className="section-buttons">
         <motion.button
-          onClick={() => handleSectionClick('finalYear')}
+          onClick={() => handleSectionClick("finalYear")}
           className={`section-button ${
-            selectedSection === 'finalYear' ? 'active' : ''
+            selectedSection === "finalYear" ? "active" : ""
           }`}
           variants={buttonVariants}
           initial="initial"
@@ -50,9 +49,9 @@ const MembersPage = () => {
           Final Year
         </motion.button>
         <motion.button
-          onClick={() => handleSectionClick('thirdYear')}
+          onClick={() => handleSectionClick("thirdYear")}
           className={`section-button ${
-            selectedSection === 'thirdYear' ? 'active' : ''
+            selectedSection === "thirdYear" ? "active" : ""
           }`}
           variants={buttonVariants}
           initial="initial"
@@ -61,9 +60,9 @@ const MembersPage = () => {
           Third Year
         </motion.button>
         <motion.button
-          onClick={() => handleSectionClick('secondYear')}
+          onClick={() => handleSectionClick("secondYear")}
           className={`section-button ${
-            selectedSection === 'secondYear' ? 'active' : ''
+            selectedSection === "secondYear" ? "active" : ""
           }`}
           variants={buttonVariants}
           initial="initial"
@@ -72,9 +71,9 @@ const MembersPage = () => {
           Second Year
         </motion.button>
         <motion.button
-          onClick={() => handleSectionClick('firstYear')}
+          onClick={() => handleSectionClick("firstYear")}
           className={`section-button ${
-            selectedSection === 'firstYear' ? 'active' : ''
+            selectedSection === "firstYear" ? "active" : ""
           }`}
           variants={buttonVariants}
           initial="initial"
@@ -105,12 +104,10 @@ const MembersPage = () => {
               <p>{profile.location}</p>
               <div className="team-social-links">
                 <a href={profile.instagram}>
-                  {/* <InstagramIcon className="s-icon" /> */}
-                  <InstagramIcon style={{ color: '#892be0', fontSize: '30px' }} />
+                  <InstagramIcon style={{ color: "white", fontSize: "30px" }} />
                 </a>
                 <a href={profile.linkedin}>
-                  {/* <LinkedInIcon className="s-icon" /> */}
-                  <LinkedInIcon style={{ color: '#892be0', fontSize: '30px' }} />
+                  <LinkedInIcon style={{ color: "white", fontSize: "30px" }} />
                 </a>
               </div>
             </div>
