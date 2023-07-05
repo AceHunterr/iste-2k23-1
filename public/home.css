@@ -43,15 +43,15 @@
 @keyframes words {
   0%,
   33% {
-    content: "FAMILY";
+    content: "A FAMILY";
   }
   34%,
   66% {
-    content: "ORGANISATION";
+    content: "AN ORGANISATION";
   }
   67%,
   100% {
-    content: "TEAM";
+    content: "A TEAM";
   }
 }
 
@@ -64,7 +64,7 @@
   33%,
   66%,
   99% {
-    width: calc(100% + 8px);
+    width: calc(100% + 12px);
   }
 }
 

@@ -4,12 +4,16 @@ import AnimatedCursor from "react-animated-cursor";
 const animatedCursor = () => {
   return (
     <AnimatedCursor
-      innerSize={10}
-      outerSize={16}
+      innerSize={6}
+      outerSize={40}
       color="115, 40, 200"
-      outerAlpha={0.2}
-      innerScale={0.8}
-      outerScale={5}
+      outerAlpha={0.3}
+      outerStyle={{
+        border: '3px solid #7328C8',
+      }}
+      innerScale={1.2}
+      outerScale={2}
+      trailingSpeed={3.5}
       clickables={[
         "a",
         'input[type="text"]',
