@@ -28,11 +28,15 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <img
-          src={BlueLogo}
-          alt="Logo"
-          style={{ width: "9vh", padding: "1px" }}
-        />
+        <Link to="/">
+          {" "}
+          {/* Link to the home page */}
+          <img
+            src={BlueLogo}
+            alt="Logo"
+            style={{ width: "9vh", padding: "1px" }}
+          />
+        </Link>
         <button className="mobile-menu-icon" onClick={toggleMobileMenu}>
           {mobile ? <CloseIcon /> : <DehazeIcon />}
         </button>
