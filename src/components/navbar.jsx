@@ -28,11 +28,15 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <img
-          src={BlueLogo}
-          alt="Logo"
-          style={{ width: "9vh", padding: "1px" }}
-        />
+        <Link to="/">
+          {" "}
+          {/* Link to the home page */}
+          <img
+            src={BlueLogo}
+            alt="Logo"
+            style={{ width: "9vh", padding: "1px" }}
+          />
+        </Link>
         <button className="mobile-menu-icon" onClick={toggleMobileMenu}>
           {mobile ? <CloseIcon /> : <DehazeIcon />}
         </button>
@@ -50,7 +54,7 @@ const Navbar = () => {
             <Link to="/gallery">Gallery</Link>
           </li>
           <li onClick={() => setMobile(false)} className="navlink-text">
-            <Link to="/blogs">Blog</Link>
+            <Link to="/blogs">Blogs</Link>
           </li>
           <li onClick={() => setMobile(false)}>
             <DarkMode />
