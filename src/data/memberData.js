@@ -586,7 +586,7 @@ const profileData = [
   },
   {
     section: "secondYear",
-    name: "Ayan Chadoria",
+    name: "Ayan Choradia",
     branch: "Electrical Engineering",
     location: "Jodhpur, Rajasthan",
     instagram: "https://instagram.com/ayanchoradia?igshid=ZDdkNTZiNTM=",
