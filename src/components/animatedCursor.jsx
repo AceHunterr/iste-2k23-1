@@ -5,13 +5,13 @@ const animatedCursor = () => {
   return (
     <AnimatedCursor
       innerSize={6}
-      outerSize={40}
+      outerSize={36}
       color="115, 40, 200"
       outerAlpha={0.3}
       outerStyle={{
-        border: '3px solid #7328C8',
+        border: "2px solid #7328C8",
       }}
-      innerScale={1.2}
+      innerScale={1}
       outerScale={2}
       trailingSpeed={3.5}
       clickables={[
