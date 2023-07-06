@@ -342,18 +342,22 @@
   color: #666;
 }
 .contactForm .inputBox input:focus ~ span,
-.contactForm
-  .inputBox
-  input:valid
-  ~ span
-  .contactForm
-  .inputBox
-  textarea:focus
-  ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span {
   color: var(--link-color);
   font-size: 12px;
   transform: translateY(-20px);
+}
+
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input:not(:valid):placeholder-shown ~ span,
+.contactForm .inputBox textarea:not(:valid):placeholder-shown ~ span {
+  transform: translateY(0);
 }
 
 .contactForm .submit-btn {
