@@ -132,7 +132,7 @@ const ContactUs = () => {
             <div className="text">
               <h3>Address</h3>
               <p>
-                NITH,Hamirpur
+                NIT,Hamirpur
                 <br />
                 Himachal Pradesh, India, <br />
                 177001
