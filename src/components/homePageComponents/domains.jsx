@@ -35,7 +35,7 @@ const Domains = () => {
         <div className="center-header-div">
           <h2 className="center-heading">Domains</h2>
         </div>
-        <div className="row">
+        <div className="row domain-cards-container">
           <div className="domain-card">
             <motion.div
               className="graphic-animation-container"
