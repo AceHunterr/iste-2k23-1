@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DehazeIcon from "@mui/icons-material/Dehaze";
 import CloseIcon from "@mui/icons-material/Close";
 import DarkMode from "./DarkMode/DarkMode";
-import LightLogo from "../static/images/iste-logo-light.png";
+import LightLogo from "../static/images/iste-logo-lightblue.png";
 import DarkLogo from "../static/images/iste-logo-dark.png";
 
 const Navbar = ({ theme, toggleTheme }) => {

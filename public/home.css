@@ -198,7 +198,7 @@
 .about-us-box p {
   margin-bottom: 10px;
   color: var(--color-white-text);
-  font-size: var(--font-subheading);
+  font-size: var(--font-size-paragraph);
 }
 
 .domain-container {
