@@ -9,8 +9,8 @@
   --font-size-41xl: 60px;
   --font-size-16xl: 35px;
   --font-section-heading: 2.5rem;
-  --font-subheading: 1.4rem;
-  --font-size-paragraph: 0.8rem;
+  --font-subheading: 2rem;
+  --font-size-paragraph: 1.4rem;
 
   /* Colors */
   --color-red: #e8505b;
@@ -28,6 +28,7 @@
   --footer-background: #ddd;
   --body-darker-background: #bbb;
   --body_color: #000;
+  --navbar-background: #FFFFFF;
   --link-color: navy;
   --color-text-primary: #121212;
   --color-text-secondary: #191919;
@@ -42,6 +43,7 @@
   /* --body-background : #000; */
   --footer-background: #222;
   --body-darker-background: #555;
+  --navbar-background: #131418;
   --body_color: #fff;
   /* --link-color : #129eeb; */
   --link-color: #892be0;

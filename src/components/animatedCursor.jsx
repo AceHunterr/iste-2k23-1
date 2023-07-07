@@ -7,7 +7,7 @@ const animatedCursor = () => {
       innerSize={6}
       outerSize={36}
       color="115, 40, 200"
-      outerAlpha={0.3}
+      outerAlpha={0.2}
       outerStyle={{
         border: "2px solid #7328C8",
       }}
