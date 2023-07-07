@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { ReactComponent as Sun } from "./Sun.svg";
 import { ReactComponent as Moon } from "./Moon.svg";
 import "./DarkMode.css";
@@ -9,7 +9,8 @@ const DarkMode = ({ theme, toggleTheme }) => {
     if (selectedTheme === "dark") {
       setDarkMode();
     }
-  }, []); // Run this effect only once on initial render
+    // eslint-disable-next-line
+  }, []);
 
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");

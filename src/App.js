@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { HashRouter } from "react-router-dom";
 
 import Navbar from "./components/navbar";
@@ -21,7 +21,7 @@ const App = () => {
       <AnimatedCursor />
       <HashRouter>
         <Headroom>
-          <Navbar theme={theme} toggleTheme={toggleTheme}/>
+          <Navbar theme={theme} toggleTheme={toggleTheme} />
         </Headroom>
         <AnimatedRoutes />
       </HashRouter>
