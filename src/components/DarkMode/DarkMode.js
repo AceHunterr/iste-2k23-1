@@ -6,12 +6,10 @@ import "./DarkMode.css";
 const DarkMode = () => {
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
-    // document.querySelector(".navbar").style.background = '#131418';
     localStorage.setItem("selectedTheme", "dark");
   };
   const setLightMode = () => {
     document.querySelector("body").setAttribute("data-theme", "light");
-    // document.querySelector(".navbar").style.background = '#FFFFFF';
     localStorage.setItem("selectedTheme", "light");
   };
 
