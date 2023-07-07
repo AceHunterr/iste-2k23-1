@@ -9,12 +9,12 @@ import BlogDetails from "./blogDetails";
 import GalleryPageWrapper from "./GalleryPageWrapper";
 import { AnimatePresence } from "framer-motion";
 
-const AnimatedRoutes = () => {
+const AnimatedRoutes = (currentTheme) => {
   const location = useLocation();
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage useTheme={currentTheme}/>} />
         <Route path="/events" element={<EventPage />} />
         <Route path="/members" element={<MembersPage />} />
         <Route path="/blogs" element={<BlogPage />} />

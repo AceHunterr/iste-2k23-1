@@ -2,11 +2,14 @@ import React from "react";
 import BlueLogo from "../static/images/iste-logo-blue.png";
 import instagramIcon from "../static/images/icons/instagram.png";
 import facebookIcon from "../static/images/icons/facebook.png";
-import githubIcon from "../static/images/icons/github.png";
+import githubIconDark from "../static/images/icons/github-dark2.png";
+import githubIconLight from "../static/images/icons/github-light.png";
 import twitterIcon from "../static/images/icons/twitter.png";
 import linkedinIcon from "../static/images/icons/linkedin.png";
 
-const footer = () => {
+const footer = (currentThemeState) => {
+  const themeWord = currentThemeState.useTheme.useTheme.useTheme;
+  console.log("Logging this from the footer, the current theme fetched frmo the navbar switch button is: ", themeWord);
   return (
     <div className="footer">
       <div className="sb__footer  section__padding">
@@ -88,12 +91,21 @@ const footer = () => {
                   rel="noreferrer"
                   className=""
                 >
+                {(themeWord === "dark")?(
                   <img
-                    src={githubIcon}
+                    src={githubIconDark}
                     alt=""
                     className="sb__footer-links-icon"
                     srcset=""
                   />
+                ):(
+                  <img
+                    src={githubIconLight}
+                    alt=""
+                    className="sb__footer-links-icon"
+                    srcset=""
+                  />   
+                )}
                 </a>
               </p>
               <p>
@@ -118,7 +130,7 @@ const footer = () => {
         <hr />
         <div className="sb_footer-below">
           <div className="sb_footer-copyright">
-            <p>ISTE NITH@{new Date().getFullYear()}, Made with ❤️.</p>
+            <p>ISTE NITH@{new Date().getFullYear()}, Made with ❤️</p>
           </div>
         </div>
       </div>

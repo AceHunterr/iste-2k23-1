@@ -7,7 +7,7 @@ import IntroBackground from "../components/particlesBackground/introBackground";
 import ContactUs from "../components/homePageComponents/contactUs";
 import Footer from "../components/footer";
 
-const HomePage = () => {
+const HomePage = (currentTheme) => {
   return (
     <>
       <motion.div
@@ -20,7 +20,7 @@ const HomePage = () => {
         <AboutUs />
         <Domains />
         <ContactUs />
-        <Footer />
+        <Footer useTheme={currentTheme}/>
         <MessageWidget />
       </motion.div>
     </>

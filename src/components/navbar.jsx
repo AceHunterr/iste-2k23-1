@@ -5,7 +5,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import DarkMode from "./DarkMode/DarkMode";
 import BlueLogo from "../static/images/iste-logo-blue.png";
 
-const Navbar = () => {
+const Navbar = ({setThemeParent}) => {
   const [mobile, setMobile] = useState(false);
 
   const handleResize = () => {
@@ -24,6 +24,10 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setMobile(!mobile);
   };
+
+  const setThemeNavbar = (currentTheme)=>{
+    setThemeParent(currentTheme);
+  }
 
   return (
     <>
@@ -57,7 +61,7 @@ const Navbar = () => {
             <Link to="/blogs">Blogs</Link>
           </li>
           <li onClick={() => setMobile(false)}>
-            <DarkMode />
+            <DarkMode setThemeNavbar={setThemeNavbar}/>
           </li>
         </ul>
       </nav>
