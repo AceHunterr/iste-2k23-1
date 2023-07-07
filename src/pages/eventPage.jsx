@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import firstImage from "../static/images/hult_events.jpg";
 import secondImage from "../static/images/prodyy_events.jpg";
 import thirdImage from "../static/images/pahal_events.jpg";
-import fourthImage from "../static/images//test_wp3.jpg";
+import fourthImage from "../static/images//prarambh_events.jpg";
 import Footer from "../components/footer";
 
 const EventPage = () => {
