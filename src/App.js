@@ -8,7 +8,6 @@ import AnimatedRoutes from "./components/AnimatedRoutes";
 // eslint-disable-next-line
 import Preloader from "./components/Preloader";
 // eslint-disable-next-line
-import Footer from "./components/footer";
 
 const App = () => {
   const initialTheme = localStorage.getItem("selectedTheme");

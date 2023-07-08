@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import DehazeIcon from "@mui/icons-material/Dehaze";
 import CloseIcon from "@mui/icons-material/Close";
 import DarkMode from "./DarkMode/DarkMode";
-import BlueLogo from "../static/images/iste-logo-blue.png";
+import LightLogo from "../static/images/iste-logo-lightblue.png";
+import DarkLogo from "../static/images/iste-logo-dark.png";
 
-const Navbar = ({setThemeParent}) => {
+const Navbar = ({setThemeParent, theme}) => {
   const [mobile, setMobile] = useState(false);
 
   const handleResize = () => {
@@ -33,10 +34,8 @@ const Navbar = ({setThemeParent}) => {
     <>
       <nav className="navbar">
         <Link to="/">
-          {" "}
-          {/* Link to the home page */}
           <img
-            src={BlueLogo}
+            src={theme === "light" ? LightLogo : DarkLogo}
             alt="Logo"
             style={{ width: "9vh", padding: "1px" }}
           />
