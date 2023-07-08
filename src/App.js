@@ -21,7 +21,7 @@ const App = () => {
       <AnimatedCursor />
       <HashRouter>
         <Headroom>
-          <Navbar setThemeParent={setThemeOuter}/>
+          <Navbar setThemeParent={setThemeOuter} useTheme={theme}/>
         </Headroom>
         <AnimatedRoutes useTheme={theme}/>
       </HashRouter>

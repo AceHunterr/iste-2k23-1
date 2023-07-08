@@ -89,6 +89,10 @@ hr {
   }
 }
 
+.center-footer{
+  height: 90px;
+}
+
 @media screen and (max-width: 550px) {
   .sb_footer-heading h1 {
     font-size: 34px;

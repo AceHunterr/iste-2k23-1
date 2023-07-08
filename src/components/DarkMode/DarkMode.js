@@ -3,16 +3,9 @@ import { ReactComponent as Sun } from "./Sun.svg";
 import { ReactComponent as Moon } from "./Moon.svg";
 import "./DarkMode.css";
 
-const DarkMode = ({ setThemeNavbar }) => {
-  useEffect(() => {
-    const selectedTheme = localStorage.getItem("selectedTheme");
-    if (selectedTheme === "dark") {
-      setDarkMode();
-    }else{
-      setLightMode();
-    }
-    // eslint-disable-next-line
-  }, []);
+const DarkMode = ({ setThemeNavbar}) => {
+
+  const theme = localStorage.getItem("selectedTheme");
 
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");

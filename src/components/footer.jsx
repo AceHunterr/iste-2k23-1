@@ -23,17 +23,10 @@ const footer = (currentThemeState) => {
             />
           </div>
 
-          <div className="sb__footer-links-div">
+          <div className="sb__footer-links-div center-footer">
             <h4>Visit Us</h4>
-            <a href="/">
-              <p>Email</p>
-            </a>
-            <a href="/">
-              <p>NITH</p>
-            </a>
-            <a href="/">
-              <p>ISTE</p>
-            </a>
+            <p>iste@nith.ac.in</p>
+            <p>marketinghead.iste@gmail.com</p>
           </div>
 
           <div className="sb__footer-links-div">
@@ -90,22 +83,13 @@ const footer = (currentThemeState) => {
                   target="_blank"
                   rel="noreferrer"
                   className=""
-                >
-                {(themeWord === "dark")?(
+                >                
                   <img
-                    src={githubIconDark}
+                    src={(themeWord === "dark") ? githubIconDark : githubIconLight}
                     alt=""
                     className="sb__footer-links-icon"
                     srcset=""
                   />
-                ):(
-                  <img
-                    src={githubIconLight}
-                    alt=""
-                    className="sb__footer-links-icon"
-                    srcset=""
-                  />   
-                )}
                 </a>
               </p>
               <p>
