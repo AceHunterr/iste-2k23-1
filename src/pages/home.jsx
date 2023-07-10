@@ -16,7 +16,7 @@ const HomePage = (currentTheme) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <IntroBackground />
+        <IntroBackground useTheme={currentTheme}/>
         <AboutUs />
         <Domains />
         <ContactUs />

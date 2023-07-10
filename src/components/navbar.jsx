@@ -60,7 +60,7 @@ const Navbar = ({setThemeParent, useTheme}) => {
             <Link to="/blogs">Blogs</Link>
           </li>
           <li onClick={() => setMobile(false)}>
-            <DarkMode setThemeNavbar={setThemeNavbar}/>
+            <DarkMode setThemeNavbar={setThemeNavbar} setTheme={useTheme}/>
           </li>
         </ul>
       </nav>
